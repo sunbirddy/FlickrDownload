@@ -4,16 +4,30 @@ This simple script helps you download flickr images (one at a time or bulky down
 Before using, please make sure you already have Python 2.7+ and Python Flickr API kit (from http://stuvel.eu/flickrapi) installed on your computer. And you have a registered Flickr API key and secret. Happy downloading!
 
 Steps to use: 
+
 1. Install Python 2.7+ in your computer. Currently because the Python Flickr API kit doesn't support Python 3.3+, we recommend you to use Python 2.7. You can download the newest version at https://www.python.org/downloads/.
+
 2. Install the Python Flickr API kit, instructions at http://stuvel.eu/flickrapi. 
+
    If you don't have Setup-tools installed, type:
-      sudo apt-get install python-setuptools
+   
+         sudo apt-get install python-setuptools
+      
    Then type
-      easy_install flickrapi
+   
+         easy_install flickrapi
+      
    to install the api toolkit. You can then always update to the latest version using:
-      easy_install -U flickrapi
+   
+         easy_install -U flickrapi
+      
 3. Use any text editor to open script flickrDownload.py, fill in your Flickr API key and secret. Change any criteria you desire or unwanted. Remmeber to change the folder name to store your images and its associated metadata. 
+
 4. Open a terminal, run the script
-      python /DIRECTORY TO THE SCRIPT/flickrDownload.py
-You will see the retrived photo ID, geo coordinates displayed in the terminal, and all the photos downloaded to your specified folder.
+
+         python /DIRECTORY TO THE SCRIPT/flickrDownload.py
+
+   You will see the retrived photo ID, geo coordinates displayed in the terminal, and all the photos downloaded to your            specified folder.
+   
+   
 5. Sometimes there will be error occurs like internet error. This is because your network doesn't connect with Flickr stablely. Try to find a stable network before downloading the data or download the images by batches (e.g., use min_taken_time and max_taken_time to restrict the number of retrieved photos at a time and download multiple times.)
